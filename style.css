@@ -1,0 +1,177 @@
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Courier New';
+    color: white;
+    opacity: 85%;
+    height: 100%;
+    background: linear-gradient(#0000FF, #000044);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    border-bottom: 2px solid #F66666;
+    margin-bottom: 20px;
+}
+
+.cabecalho {
+    padding-bottom: 50px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 45px;
+    padding-left: 10px;
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+main {
+    margin: 10px auto;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 0.5px solid #F66666;
+}
+
+.compras {
+    position: absolute;
+    right: 400px;
+    border-right: 2px #F66666 solid;
+    text-align: right;
+    width: 386px;
+}
+
+.compras h2 { 
+    padding: 10px 10px 7px 10px;
+    margin-left: 40px;
+}
+
+.compras li {
+    margin: 10px 10px 30px 10px;
+    padding-left: 40px;
+    font-weight: bold;
+}
+
+.comprado a {
+    text-decoration: line-through;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+li a:hover {
+    color: red;
+}
+
+.produto-preco {
+    font-size: 12px;
+    padding-top: 5px;
+    padding-right: 5px;
+    color: #AAAAAA;
+}
+
+.produto-preco:after {
+    content: " ⤶";
+}
+
+.separar {
+    position: absolute;
+    left: 400px;
+    border-left: 2px #F66666 solid;
+    text-align: left;
+    width: 486px;
+}
+
+.separar ul li{
+    padding: 5px;
+}
+
+.separar h2 {
+    padding: 10px 10px 0 10px;
+}
+
+.separar li {
+    margin: 10px 10px 10px 10px;
+    padding-right: 40px;
+    font-weight: bold;
+}
+
+.separar li:before {
+    content: "⠔ ";
+}
+
+.sub-lista {
+    font-size: 12px;
+    color: #AAAAAA;
+}
+
+.sub-lista li:before {
+    content: "⤷ ";
+}
+
+@media screen and (max-width: 900px) {
+    .cabecalho, header {
+        width: 100%;
+    }
+
+    h1 {
+        margin: 10px 10px 0 10px;
+        padding: 50px 0 0 0;
+        text-align: center;
+    }
+
+    main {
+        margin: 10px;
+    }
+
+    .compras {
+        position: static;
+        margin-left: 10px;
+        text-align: left;
+        border-right: none;
+        border-left: #F66666 solid;
+        width: 100%;
+    }
+
+    .compras h2 {   
+        margin: 0;
+    }
+
+    .compras li {
+        padding-left: 10px;
+    }
+
+    .produto-preco:after {
+        content: "";
+    }
+
+    .produto-preco:before {
+        content: "⤷ ";
+    }
+
+    .separar {
+        position: static;
+        margin-left: 10px;
+        width: 100%;
+    }
+}
